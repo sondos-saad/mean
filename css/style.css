@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Tinos', serif;
+}
+:root{
+    --span-color:#cf9d07;
+    --txt-color:#262421;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #F5EEE6;
+}
+header{
+    background-color: #F5EEE6;
+    width: 100%;
+    height: 50px;
+   padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 5px 5px 5px #d6cc9f;
+}
+header a{
+    text-decoration: none;
+    color: var(--txt-color);
+}
+header .logo{
+    font-size: 25px;
+    font-weight: 800;
+}
+header .logo span{
+    color:var(--span-color);
+}
+header .navigation{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 50px;
+}
+header .navigation a{
+    font-size: 15px;
+    font-weight: 600;
+
+}
+header .navigation a:hover{
+    color: var(--span-color);
+    transition: 0.3s;
+}
+section{
+    padding: 100px 100px;
+}
+ .home{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    gap: 20px;
+   padding-top: 150px;
+}
+ .home .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.home .text p{
+    font-size: 25px;
+    color: var(--txt-color);
+    margin-bottom: 20px;
+}
+.home .text p span{
+    color:var(--span-color);
+    font-weight:600 ;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.home .text h2{
+    font-size: 40px;
+    color: var(--txt-color);
+    margin-bottom: 10px;
+    font-weight:600 ;
+    letter-spacing: 1px;
+}
+.home .text h3{
+    font-size: 20px;
+    color: var(--txt-color);
+    margin-bottom: 70px;
+}
+.home .text .btn{
+    width: 50%;
+    height: 30px;
+    background-color: var(--span-color);
+    color: var(--txt-color);
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+
+    border-radius: 30px;
+}
+.home .text .btn:hover{
+    background-color: var(--txt-color);
+    color: var(--span-color);
+    transition: 0.3s;
+}
+.home .text .social-icon{
+    margin-top: 40px;
+}
+.home .text .social-icon .fa-linkedin-in,
+.fa-github, .fa-envelope{
+    padding: 15px;
+    font-size: 20px;
+    color: var(--txt-color);
+}
+.home .text .social-icon .fa-linkedin-in:hover {
+    color: var(--span-color);
+    transition: 0.3s;
+}
+.home .text .social-icon .fa-github:hover {
+    color:  var(--span-color);
+    transition: 0.3s;
+}
+.home .text .social-icon .fa-envelope:hover {
+    color:  var(--span-color);
+    transition: 0.3s;
+}
+ .head{
+    text-align: center;
+    text-transform: uppercase;
+    color: #979c9c61;
+    font-size: 40px;
+}
+.about .container{
+   display: flex;
+   justify-content: space-between;
+   padding: 50px 20px;
+   position: relative;
+}
+.about .container::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100px;
+   background-color: #979c9c61;
+    height: 200px;
+    width:1px;
+}
+.about .container .text-about p{
+    width:50%;
+    color: var(--txt-color);
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px 10px 0 10px;
+    font-weight: 500;
+}
+.about .container .skills{
+    width: 50%;
+    padding: 10px 10px 0 10px;
+    font-size: 20px;
+    color: var(--txt-color);
+    letter-spacing: 1px;
+}
+/* project */
+.project .cards{
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 20px 20px;
+    grid-template-rows: repeat(3 ,300px);
+
+}
+.project .cards .item-card{
+    padding: 10px 10px 0;
+
+}
+.project .cards .item-card img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.project .cards .item-card p{
+    text-align: center;
+    font-weight: bold;
+    color: var(--txt-color);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.project .cards .item-card a{
+    text-decoration: none;
+    color:  var(--txt-color);
+    background-color: var(--span-color);
+    font-weight: bold;
+    font-size: 18px;
+    padding:10px;
+    border-radius: 10px;
+    margin-left: 40%;
+}
+.project .cards .item-card a:hover{
+    color: var(--span-color);
+    background-color: var(--txt-color);
+    transition: 0.3s;
+}
+/* footer */
+footer{
+    font-size:15px;
+   text-align: center;
+   border-top: 1px solid #eee;
+    padding: 10px 100px;
+    color: var(--txt-color);
+}
+footer span{
+    color:var(--span-color);
+}
+
